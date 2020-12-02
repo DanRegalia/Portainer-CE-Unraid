@@ -52,7 +52,7 @@
   <Config Type="Path" Name="Config Storage Path" Target="/config" Default="/mnt/user/appdata/portainer-ce" Mode="rw" Display="always-visible" Required="true"
        Description="This is where Portainer will store its databases and configuration.">/mnt/user/appdata/portainer-ce</Config>
 
-  <Config Type="Socket" Name="Docker Socket" Target="/config" Default="/var/run/docker.sock" Mode="rw" Display="always-visible" Required="true"
+  <Config Type="Socket" Name="Docker Socket" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="rw" Display="advanced-hide" Required="true"
        Description="This is needed for Portainer to connect to Docker.">/var/run/docker.sock</Config>
 
 </Container>
