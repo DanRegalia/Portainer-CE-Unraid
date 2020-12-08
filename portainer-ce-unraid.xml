@@ -56,5 +56,3 @@
        Description="This is needed for Portainer to connect to Docker.">/var/run/docker.sock</Config>
 
 </Container>
-  
-</Container>
