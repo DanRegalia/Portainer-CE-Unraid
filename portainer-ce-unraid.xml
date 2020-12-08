@@ -20,7 +20,7 @@
   <Registry>https://registry.hub.docker.com/u/portainer/portainer-ce</Registry>
   <GitHub>https://github.com/DanRegalia/Portainer-CE-Unraid</GitHub>
   <Repository>portainer/portainer-ce</Repository>
-  <Support>https://forums.unraid.net/topic/38974-support-limetechs-docker-repository/</Support>
+  <Support>https://forums.unraid.net/topic/99880-support-portainer-ce/</Support>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment/>
