@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container version="2">
-  <Date>2020-11-11</Date>
+  <Date>2020-12-08</Date>
   <Beta>False</Beta>
   <Category>Docker:</Category>
   <Name>Portainer-CE</Name>
@@ -9,7 +9,13 @@
 [center][img width='155px' src='https://d36jcksde1wxzq.cloudfront.net/be7833db9bddb4494d2a7c3dd659199a.png'][/center]
 
 [font size=3]2020.11.10[/font]
-- Initial Release (Sync version 2.0)
+- Initial Release (Sync version 2)
+[font size=3]2020.12.08[/font]
+- Initial Release (Sync version 2.1)
+    - Added link to new support forum topic on Unraid
+    - Changed Docker socket to path (per previous version)
+    - Changed config directory from /config to /data (per previous version)
+    - Added Docker volume
   </Changes>
   <Overview>
     Portainer is a lightweight management UI which allows you to easily manage your Docker AND Kubernetes clusters.
@@ -38,6 +44,11 @@
     <Volume>
       <HostDir>/mnt/user/appdata/portainer-ce</HostDir>
       <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/var/run/docker.sock</HostDir>
+      <ContainerDir>/var/run/docker.sock</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
