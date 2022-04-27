@@ -34,6 +34,11 @@
     <Mode>bridge</Mode>
     <Publish>
       <Port>
+        <HostPort>8000</HostPort>
+        <ContainerPort>8000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
         <HostPort>9000</HostPort>
         <ContainerPort>9000</ContainerPort>
         <Protocol>tcp</Protocol>
@@ -52,7 +57,7 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <WebUI>http://[IP]:[PORT:9000]/</WebUI>
+  <WebUI>http://[IP]:[PORT:8000]/</WebUI>
   <Icon>https://d36jcksde1wxzq.cloudfront.net/be7833db9bddb4494d2a7c3dd659199a.png</Icon>
 
   <Network Default="bridge">bridge</Network>
